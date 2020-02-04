@@ -1,45 +1,29 @@
-// let toggleCardStatus = false;
+let clickedCard = null;
 
-// function toggleCard() {
-//     let getBackCard = document.querySelector(".front");
-//     let getFrontCard = document.querySelector(".back")
-
-    
-
-//     if (toggleCardStatus === false) {
-//         getBackCard.style.display = "block";
-//         getFrontCard.style.display = "none";
-
-//         toggleCardStatus = true;
-//     }
-
-    
-// }
-
-// function toggleCard2() {
-//     let getBackCard = document.querySelector(".front");
-//     let getFrontCard = document.querySelector(".back")
-
-//     if (toggleCardStatus === true) {
-//         getBackCard.style.display = "none";
-//         getFrontCard.style.display = "block";
-
-//         toggleCardStatus = false
-//     }
-// }
-
-let clickedStatus = false;
-
-function clickBlock(e) {
+function onCardClicked(e) {
     let target = e.currentTarget
-    console.log(target.className)
+    target.className = target.className.replace("hide-color", "")
 
-    // let getBlock = document.querySelector(".number")
+    target.className += " done"
 
-    // if (clickedStatus === false) {
-    //     getBlock.style.display = "block";
-    //     clickedStatus = true;
-    // }
+    console.log(target.getAttribute("data-color"))
+
+    if (!clickedCard) {
+        clickedCard = target;
+    } else if (clickedCard) {
+        if (clickedCard.getAttribute("data-color") === target.getAttribute("data-color")) {
+            console.log("cards ARE equal")
+            clickedCard = null
+        } else{
+            console.log("cards NOT equal")
+            setTimeout(() => {
+                console.log("we are here!!")
+                clickedCard.className = clicked.className.replace("done", "").trim() + " hide-color"
+                target.className =
+            })
+        }
+    }
+    
 }
 
 

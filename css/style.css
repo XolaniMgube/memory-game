@@ -1,17 +1,7 @@
 body{
-    background-color: red;
     display: grid;
     justify-items: center;
     align-items: center;
-}
-
-p{
-    font-size: 30px;
-    text-align: center;
-}
-
-.number{
-    display: none;
 }
 
 #memory-game{
@@ -26,6 +16,26 @@ p{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+}
+
+.pink{
+    background-color: pink;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
+
+.hide-color{
+    background-color: gray;
 }
 
 
