@@ -1,58 +1,48 @@
-body{
+.container{
     display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-#memory-game{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 5fr;
-    height: 100vh;
-    width: 80vw;
-}
-
-#game-block{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4, 1fr);
-}
-
-.pink{
-    background-color: pink;
-}
-
-.blue{
-    background-color: blue;
+    width: 200px;
+    height: 200px;
+    grid-gap: 5px;
 }
 
 .red{
     background-color: red;
 }
 
+.blue{
+    background-color: blue;
+}
+
+.brown{
+    background-color: brown
+}
+
+.pink{
+    background-color: pink;
+}
+
+.green{
+    background-color: green;
+}
+
 .black{
     background-color: black;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
 }
 
 .hide-color{
     background-color: gray;
 }
 
-
-
-
-
-
-.block{
-   border: 1px solid white; 
-
-}
-
-h1{
-    text-align: center;
-}
-
-
-h2{
-    text-align: center;
+data-color{
+    background-color: orange;
 }
