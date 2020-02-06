@@ -1,10 +1,19 @@
+body{
+    display: grid;
+    justify-items: center;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4, 1fr);
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     grid-gap: 5px;
+}
+
+.card:hover{
+    border: 2px solid red;
 }
 
 .red{
@@ -41,8 +50,4 @@
 
 .hide-color{
     background-color: gray;
-}
-
-data-color{
-    background-color: orange;
 }

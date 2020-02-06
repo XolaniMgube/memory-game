@@ -12,14 +12,12 @@ for (let color of colors) {
     cardA.className += ` ${color}`
     cardA.setAttribute("data-color", color);
 
-
     const cardBIndex = parseInt(Math.random() * cards.length);
     const cardB = cards[cardBIndex];
     cards.splice(cardBIndex, 1);
     cardB.className += ` ${color}`
-    cardB .setAttribute("data-color", color);
+    cardB.setAttribute("data-color", color);
 }
-
 
 function card(event) {
     let target = event.currentTarget
@@ -41,7 +39,7 @@ function card(event) {
             matches++
             clickedCard = null;
             if (matches == 8) {
-                alert("You Won");
+                alert("you won");
             }
             console.log("cards ARE equal")
         }
