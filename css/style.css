@@ -1,6 +1,8 @@
 body{
     display: grid;
     justify-items: center;
+    background-color: lightblue;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .container{
@@ -10,10 +12,19 @@ body{
     width: 400px;
     height: 400px;
     grid-gap: 5px;
+    align-items: center;
+    justify-items: center
+}
+
+.card{
+    width: 100px;
+    height: 100px;
 }
 
 .card:hover{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    box-shadow: inset 0px 0px 0px 2px red;
+    box-sizing: border-box;
 }
 
 .red{
@@ -51,3 +62,17 @@ body{
 .hide-color{
     background-color: gray;
 }
+
+
+@media only screen and (max-width: 450px) {
+    
+    .card{
+        width: 80px;
+        height: 80px;
+    }
+
+    .container{
+        width: 335px;
+        height: 335px;
+    }
+  }
